@@ -1,0 +1,17 @@
+{
+  "name": "electron-wasm",
+  "version": "1.0.0",
+  "description": "Exploring the Use of Electron in WebAssembly",
+  "license": "0BSD",
+  "author": "pseudoical",
+  "type": "module",
+  "main": "./src/index.mjs",
+  "scripts": {
+    "start": "electron .",
+    "prestart": "npm run build:wasm",
+    "build:wasm": "wat2wasm ./src/index.wat"
+  },
+  "devDependencies": {
+    "electron": "^44.4.5"
+  }
+}
