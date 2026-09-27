@@ -97,7 +97,6 @@
         (result externref)
 
         (local $args externref)
-        (local $options externref)
         (local $window externref)
 
         (global.get $BrowserWindow.prototype)
